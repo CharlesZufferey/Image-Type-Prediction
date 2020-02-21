@@ -3,7 +3,7 @@
 Created on Tue Feb  4 12:35:12 2020
 
 @author: Charles
-Plan: 
+Plan:
     1) run deletefolder script on console
     2) enter URL on flask website
     3) run spider (URL should be coming from flask) on console
@@ -17,13 +17,14 @@ from keras.preprocessing import image
 import numpy as np
 from keras.models import load_model
 import os, shutil
+import pandas as pd
 #%% Loading NN models
 m1 = load_model('/Users/Charles/Documents/Spiced/FinalProject/silovsenviro.h5')
 m2 = load_model('/Users/Charles/Documents/Spiced/FinalProject/secvsprimary.h5')
 
 
 #%% using pretrained models to predict type of images
-def prediction(path): 
+def prediction(path):
     from keras.preprocessing import image
     import numpy as np
     from keras.models import load_model
@@ -59,4 +60,3 @@ def prediction(path):
         #print ("Type: Unknown")
         b = "Unkown"
     return a,b
-           
