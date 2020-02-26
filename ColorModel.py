@@ -134,7 +134,7 @@ history = model.fit_generator(
       steps_per_epoch=50,#100
       epochs=50,#100
       validation_data=validation_generator,
-      validation_steps=25)#50
+      validation_steps=30)#50
 #%%
 model.save('/users/charles/documents/spiced/FinalProject/color.h5')
 
@@ -217,8 +217,3 @@ df = pd.DataFrame(colorlist,predlist).reset_index()#.sort_values(by=['index'],as
 print(df.loc[(np.argmax(df['index'].values))].values[1])
 #%%
 print(df['index'].dtype)
-
-
-
-
-
