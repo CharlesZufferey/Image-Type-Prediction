@@ -18,7 +18,7 @@ import numpy as np
 from tensorflow.keras.models import load_model
 import os, shutil
 import keras.backend.tensorflow_backend as tb
-tb._SYMBOLIC_SCOPE.value = True
+##tb._SYMBOLIC_SCOPE.value = True
 import numpy
 import pandas as pd
 
