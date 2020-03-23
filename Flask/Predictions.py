@@ -49,10 +49,10 @@ def prediction(path):
     else:
         #print ("Type: Unknown")
         a = "Unknown"
-    if m2.predict(img_tensor) > 0.50:
+    if m2.predict(img_tensor) > 0.51:
         #print("Type: secondary")
         b = "Secondary"
-    elif m2.predict(img_tensor) < 0.50:
+    elif m2.predict(img_tensor) < 0.49:
         #print("Type: primary")
         b = "Primary"
     else:
